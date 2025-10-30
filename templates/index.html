@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration System</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎉 Event Registration System</h1>
+    </header>
+
+    <main>
+        <section id="registration-form-section">
+            <h2>Participant Registration</h2>
+            <form id="registration-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="event">Event Name:</label>
+                <input type="text" id="event" name="event" required>
+
+                <button type="submit">Register Now</button>
+            </form>
+            <p id="message-area" class="message"></p>
+        </section>
+
+        <hr>
+
+        <section id="admin-dashboard">
+            <h2>📈 Admin Monitoring Dashboard</h2>
+            <p>Total Registrations: <strong id="total-registrations">...</strong></p>
+
+            <table id="registrations-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Event</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="registrations-tbody">
+                    </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
